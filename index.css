@@ -1,0 +1,47 @@
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    /* Alapértelmezett beállítésa*/
+    /* border-collapse: separate;*/
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+td, th {
+    padding: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+th {
+    background-color: brown;
+}
+tr {
+    background-color: aliceblue;
+}
+/* második sort színez */
+tr:nth-child(2){
+    background-color: violet;
+}
+/* even- páros sorokat színez */
+tr:nth-child(even) {
+    background-color: violet;
+}
+
+/* odd- páratlan sorokat színez */
+tr:nth-child(odd) {
+    background-color: aqua;
+}
+
+caption {
+    padding-bottom: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
